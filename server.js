@@ -88,6 +88,14 @@ app.put('/api/references/:id', async (req, res) => {
 //         res.status(500).send("Error saving reference");
 //     }
 // });
+function generateRandomString(length) {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let result = '';
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return result;
+}
 
 app.post('/api/references', upload.single('pdf'), async (req, res) => {
   try {
@@ -101,7 +109,10 @@ app.post('/api/references', upload.single('pdf'), async (req, res) => {
     const [rows] = await pool.query("SELECT MAX(id) AS maxId FROM `references`");
     const nextId = (rows[0].maxId || 0) + 1;
 
-    const renamedFile = `ref${nextId}.pdf`;
+
+    const randomString = generateRandomString(15);
+
+    const renamedFile = `ref${randomString}_${nextId}.pdf`;
     const fs = require('fs');
     const oldPath = `html/static/uploads/${originalFilename}`;
     const newPath = `html/static/uploads/${renamedFile}`;
