@@ -27,6 +27,37 @@
 
 ---
 
+## 🚀 Deployment Architecture
+
+### Deployment Flow: From Local Dev to Production
+
+```
+[Local Dev + Dockerfile + Docker Compose] 
+                 |
+                 v 
+        ┌───────────────────────────────────────────────┐
+        │ GitHub Repo                                   │
+        │ https://github.com/67130237/CT519_cloud_computing_final_exam │
+        └───────────────────────────────────────────────┘ 
+                 |
+                 v
+        ┌─────────────────────┐
+        │   AWS EC2 Instance  │  ← (Ubuntu + Docker + Docker Compose)
+        └─────────────────────┘
+                 |
+                 v
+        Elastic IP (e.g. 13.xx.xx.xx)  
+                 |
+                 v
+        ┌────────────────┐
+        │   Cloudflare   │  ← (DNS Mapping + SSL passthrough)
+        └────────────────┘
+                 |
+                 v
+🌐 **Final URL** → https://FinalExam.iammark.online
+
+---
+
 ## ⚙️ Tech Stack
 
 - Frontend: HTML + JS + CSS (Minimal)
@@ -36,8 +67,6 @@
 - Cloud Infra: AWS EC2 + Elastic IP + Cloudflare DNS
 
 ---
-
-## 🚀 How to Run (Local / EC2)
 
 ### ✅ Clone Repo
 

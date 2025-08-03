@@ -24,6 +24,24 @@
   <h2>รายการอ้างอิง</h2>
   <div id="reference-list"></div>
 
+  <div id="loading-popup" style="display:none;">
+    ⏳ กำลังบันทึกข้อมูล...
+  </div>
   <script defer src="/static/js/main.js"></script>
+
+
+<script>
+  const form = document.getElementById('reference-form');
+  const loadingPopup = document.getElementById('loading-popup');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // ป้องกัน submit ปกติ
+    loadingPopup.style.display = 'block';
+
+    setTimeout(() => {
+      form.submit(); // submit จริงหลังจาก delay 2 วิ
+    }, 2000); // แสดง popup 2 วินาที
+  });
+</script>
+
 </body>
 </html>
