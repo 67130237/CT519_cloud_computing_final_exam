@@ -1,0 +1,181 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 2rem;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #fff;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  margin-bottom: 0.3rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+}
+
+.card.error {
+  background: #fff3f3;
+  border: 1px solid #ffcccc;
+  color: #a00;
+}
+
+form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input[type="file"],
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fefefe;
+}
+
+form button,
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+form button:hover,
+button:hover {
+  background-color: #0056b3;
+}
+
+a.button {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: #28a745;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+a.button:hover {
+  background: #218838;
+}
+
+section.card form {
+  margin-top: 1rem;
+}
+
+pre {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  overflow-x: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ref-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.ref-table th, .ref-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.ref-table th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
+
+.ref-table td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.ref-table td a:hover {
+  text-decoration: underline;
+}
+
+.ref-table button {
+  background-color: #dc3545;
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ref-table button:hover {
+  background-color: #a71d2a;
+}
+
+.ref-table input.title-edit {
+  font-size: 1rem;
+  padding: 4px;
+  margin-top: 4px;
+}
+.ref-table .save-btn {
+  background-color: #28a745;
+}
+.ref-table .save-btn:hover {
+  background-color: #1e7e34;
+}
+
+#reference-form {
+  transition: all 0.3s ease;
+}
+

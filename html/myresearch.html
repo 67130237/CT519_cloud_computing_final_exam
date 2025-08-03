@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Research</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <script defer src="/static/js/main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>แนวทางวิจัย</h1>
+    <nav>
+      <a href="/">หน้าแรก</a>
+      <a href="/about">เกี่ยวกับฉัน</a>
+      <a href="/myresearch">แนวทางวิจัย</a>
+      <a href="/reference">จัดการอ้างอิง</a>
+    </nav>
+  </header>
+
+  <section class="card">
+    <h1>ระบบ Agentic AI สำหรับการสืบค้นและวิเคราะห์ Microservices Log ด้วยเทคนิค Agentic AI, Model Context Protocol และ ElasticSearch Tooling</h1>
+
+
+    <h2>บทที่ 1 บทนำ</h2>
+
+    <h3>1.1 ความเป็นมาและความสำคัญของปัญหา</h3>
+    <p>ในยุคของระบบซอฟต์แวร์แบบกระจาย (Distributed Systems) และสถาปัตยกรรมไมโครเซอร์วิส (Microservices Architecture)...</p>
+    <p>แนวทาง Agentic AI ซึ่งผสานความสามารถของโมเดลภาษา (LLM) กับการเชื่อมโยง tool เชิงบริบท เช่น ElasticSearch...</p>
+    <p>งานวิจัยนี้จึงมุ่งเน้นการพัฒนาระบบ Agentic AI ที่สามารถสืบค้น วิเคราะห์ และสรุปข้อมูลจาก log ของระบบไมโครเซอร์วิส...</p>    <hr>
+    <p>sequence_diagram</p>
+    <image src="/static/uploads/sequence_diagram.png" style="width:100%;">
+
+    <h3>1.2 ขอบเขตของการวิจัย</h3>
+    <ul>
+      <li>พัฒนาระบบ Agentic AI ที่ทำงานร่วมกับ LLM ผ่าน MCP Protocol</li>
+      <li>รองรับ use case เช่น error tracing, context-aware log search, summarization</li>
+      <li>ไม่แก้ไข ElasticSearch หรือ retrain LLM</li>
+      <li>ใช้ log จำลองใกล้เคียงกับ production</li>
+    </ul>
+
+
+    <h3>1.3 วัตถุประสงค์ของการวิจัย</h3>
+    <ul>
+      <li>พัฒนาระบบ Agentic AI ที่เชื่อม ElasticSearch ผ่าน MCP</li>
+      <li>ประเมินความสามารถ LLM ในการวิเคราะห์ log</li>
+      <li>เปรียบเทียบความแม่นยำ ความเร็ว ความเข้าใจ กับวิธีดั้งเดิม</li>
+      <li>สร้างต้นแบบใช้งานใน DevOps และ Incident Response</li>
+    </ul>
+
+    <h3>1.4 ประโยชน์ที่คาดว่าจะได้รับ</h3>
+    <ul>
+      <li>ลดภาระ System Engineer</li>
+      <li>เพิ่มความแม่นยำและความเร็วในการตรวจจับปัญหา</li>
+      <li>เพิ่ม natural language insight ให้ระบบ observability</li>
+      <li>วางรากฐาน Agentic AI สำหรับ IT Ops</li>
+    </ul>
+
+    <h3>1.5 การวางแผนดำเนินการ</h3>
+    <p>การดำเนินการจะถูกแบ่งออกเป็นระยะเวลา 4 เดือน:</p>
+    <ul>
+      <li>เดือน 1: ศึกษา Agentic AI, MCP, ElasticSearch</li>
+      <li>เดือน 2: ออกแบบ MCP Server + Tool Interface</li>
+      <li>เดือน 3: เตรียม log dataset และทดสอบ LLM</li>
+      <li>เดือน 4: วิเคราะห์ผล + เขียนเล่ม</li>
+    </ul>
+
+    <h4>Gantt Chart</h4>
+    <pre>
+งาน                            เดือนที่ 1  เดือนที่ 2  เดือนที่ 3  เดือนที่ 4
+ศึกษา Agentic AI & Tools      ████████
+ออกแบบ MCP + Interface                   ████████  █████
+เตรียม Dataset                             █████     █████
+ทดสอบระบบ Agentic AI                                 █████████
+วิเคราะห์ผลและเขียนเล่ม                                       █████████
+    </pre>
+  </section>
+
+  <!-- <h2>จัดการรายการอ้างอิง</h2> -->
+  <iframe src="/ref_management" width="100%" height="600px" style="border:1px solid #ccc; border-radius:8px;"></iframe>
+<!-- 
+  <h2>รายการอ้างอิง</h2>
+  <section id="reference-list"></section>
+ -->
+
+</body>
+</html>

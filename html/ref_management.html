@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manage References</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+    <h1>
+    เพิ่มรายการอ้างอิง
+    <button id="toggle-form-btn" type="button" style="font-size:1rem; margin-left: 1rem;">[+]</button>
+    </h1>
+
+    <form id="reference-form" action="/api/references" method="POST" enctype="multipart/form-data" style="display:none;">
+    <label>ชื่อบทความ (IEEE Style)</label><br>
+    <textarea name="title" required></textarea><br><br>
+    <label>แนบไฟล์ PDF</label>
+    <input type="file" name="pdf" required /><br><br>
+    <button type="submit">เพิ่มอ้างอิง</button>
+    </form>
+
+  <hr>
+
+  <h2>รายการอ้างอิง</h2>
+  <div id="reference-list"></div>
+
+  <script defer src="/static/js/main.js"></script>
+</body>
+</html>
